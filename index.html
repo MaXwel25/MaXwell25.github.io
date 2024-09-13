@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<html lang="ru"></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+  </head>
+ <body>
+  <h1>Здравствуйте, оцените, пожалуйста, выполненую работу.</h1>
+  <br />
+  
+    <h2>Маркированный список:</h2>
+    <ul>
+      <li><a href="http://www.kubsu.ru/"target="_blank">Ссылка на главную страницу КубГУ(http)</a></li>
+      <li><a href="https://www.kubsu.ru/"target="_blank">Ссылка на главную страницу КубГУ(https)</a></li>
+      <li><em>Ночной университет<br /></em><img src="https://i5.photo.2gis.com/images/branch/0/30258560051398423_4290.jpg" style="width: 500px;" /></li>
+      <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+      <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+      <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="https://www.example.com/search?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+      <li><a href="https://www.example.com/item?id=123">Ссылка с параметром id</a></li>
+      <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+      <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+      <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+      <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+      <li>Контекстная ссылка в тексте абзаца: <a href="https://kubsu.ru">ссылка на сайт</a>.</li>
+      <li><a href="https://external-site.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
+      <li>
+          <img src="https://www.example.com/400x300" usemap="#imagemap" alt="Карта изображения">
+          <map name="imagemap">
+            <area shape="rect" coords="33, 44, 270, 350" href="https://www.example.com" alt="Прямоугольная область">
+            <area shape="circle" coords="337, 300, 44" href="https://www.example.com" alt="Круглая область">
+          </map>
+      </li>
+      <li><a href="#">Ссылка с пустым href</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="https://www.example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <li><a href="https://www.example.com" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+      <li>
+            <ol>
+                <li><a href="https://example.com/item1" title="Первый пункт">Ссылка 1</a></li>
+                <li><a href="https://example.com/item2" title="Второй пункт">Ссылка 2</a></li>
+                <li><a href="https://example.com/item3" title="Третий пункт">Ссылка 3</a></li>
+            </ol>
+      </li>
+     <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+  </ul>
+
+  <br />
+  <h3>HTML форма</h3>
+   <form action="/" method="POST">
+
+      <label>
+        Введити ваше ФИО:<br />
+        <input name="name" type="text" placeholder="ФИО" />
+      </label><br />
+
+      <label>
+        Введите свой номер телефона:<br />
+        <input name="phone" type="phone" placeholder="Телефон" />
+      </label><br />
+
+      <label>
+        Текстовое поле email:<br />
+        <input name="field-email" type="email" placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Введите дату вашего рождения:<br />
+        <input name="field-date" value="2024-09-11" type="date" />
+      </label><br />
+
+      Выберите свой пол:<br />
+      <label>
+       <input type="radio" name="gender" value="male" />
+        Мужской</label>
+      <label>
+        <input type="radio" name="gender" value="Female" />
+        Женский</label><br />
+
+      <label>
+        Выберите любимый язык програмирования:
+        <br />
+        <select name="languages" multiple="multiple">
+	       <option value="pascal" selected="selected">Pascal</option>
+          <option value="c" selected="selected">C</option>
+          <option value="cpp" selected="selected">C++</option>
+	  <option value="javascript" selected="selected">JavaScript</option>
+          <option value="php" selected="selected">PHP</option>
+          <option value="python" selected="selected">Python</option>
+          <option value="java" selected="selected">Java</option>
+          <option value="haskell" selected="selected">Haskell</option>
+          <option value="clojure" selected="selected">Clojure</option>
+          <option value="prolog" selected="selected">Prolog</option>
+          <option value="Scala" selected="selected">Scala</option>
+        </select>
+      </label><br />
+
+      <label>
+        Напишите о себе:<br />
+        <textarea name="biography" rows="5"></textarea>
+      </label><br />
+
+      <label><input type="checkbox" id="contract" name="contract" />
+        С контрактом ознакомлен</label><br />
+   
+      <input type="submit" value="Сохранить" />
+    </form>
+ </body>
+
+</html>
